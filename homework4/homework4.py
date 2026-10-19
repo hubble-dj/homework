@@ -97,11 +97,9 @@ def makefivesnothrees(bleh):
         newlist.append(list(range(start, indilist[n])))
         start = indilist[n]
     for row in newlist:
-        i = 0
-        while i < len(row):
+        for i in range(len(row)):
             if row[i] % 3 == 0:
                 row[i] = "?"
-            i+=1
     return newlist
 
 print(makefivesnothrees(list(range(27))))
@@ -118,7 +116,7 @@ def sumnothree(list):
             i += 1
     return value 
 
-#print(sumnothree(makefivesnothrees(leest)))
+print(sumnothree(makefivesnothrees(leest)))
 
 # Dictionaries 
 
